@@ -18,6 +18,13 @@ const config = {
       },
     },
     extend: {
+      colors: {
+        // blue: {      //example color override
+        //   100: '',
+        //   200: '',
+        //   300: '',
+        // },
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
