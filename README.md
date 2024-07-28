@@ -4,7 +4,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center" id='readme-top'>
-  <img src="./public/img/tv-logo.svg" alt="Logo" target='blank' width="350" height="200" style='border-radius: 1em'>
+  <img src="./public/assets/tv-logo.svg" alt="Logo" target='blank' width="350" height="200" style='border-radius: 1em'>
 
   <h3 align="center">4K Text</h3>
 

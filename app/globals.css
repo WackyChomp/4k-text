@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 
+@import '../styles/dark-theme.css';
+
+
 @layer utilities{
   .gradient-red {
     @apply bg-gradient-to-t from-red-500 to-red-400
