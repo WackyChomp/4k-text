@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { cn } from '@/lib/utils'
+import { ClerkProvider } from "@clerk/nextjs";
+import { dark } from "@clerk/themes";
 
 const roboto = Roboto({ 
   subsets: ["latin"], 
@@ -16,11 +18,21 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: {children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head />
-      <body className={cn('min-h-screen bg-sky-950 font-sans antialiased', roboto.variable)}>
-        {children}
-      </body>
-    </html>
+    <ClerkProvider
+      appearance={{
+        baseTheme: dark,
+        variables: {
+          colorPrimary: '#007fff',
+          fontSize: '20px'
+        }
+      }}
+    >
+      <html lang="en" suppressHydrationWarning>
+        <head />
+        <body className={cn('min-h-screen bg-sky-950 font-sans antialiased', roboto.variable)}>
+          {children}
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
