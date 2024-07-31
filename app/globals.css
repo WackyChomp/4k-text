@@ -22,4 +22,8 @@
   .document-title {
     @apply line-clamp-1 capitalize border border-yellow-400 text-base font-semibold leading-[24px] sm:pl-0 sm:text-xl;
   }
+
+  .auth-page-sign-in {
+    @apply flex justify-center h-screen items-center;
+  }
 }

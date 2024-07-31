@@ -2,7 +2,7 @@ import { SignIn } from '@clerk/nextjs'
 
 const SignInPage = () => {
   return (
-    <main className="">
+    <main className="auth-page-sign-in">
       <SignIn />
     </main>
   )
