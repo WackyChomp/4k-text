@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import { cn } from '@/lib/utils'
 import { ClerkProvider } from "@clerk/nextjs";
+import Provider from "./Provider";
 import { dark } from "@clerk/themes";
 
 const roboto = Roboto({ 
@@ -30,7 +31,9 @@ export default function RootLayout({children}: {children: React.ReactNode }) {
       <html lang="en" suppressHydrationWarning>
         <head />
         <body className={cn('min-h-screen bg-sky-950 font-sans antialiased', roboto.variable)}>
-          {children}
+          <Provider>
+            {children}
+          </Provider>
         </body>
       </html>
     </ClerkProvider>
