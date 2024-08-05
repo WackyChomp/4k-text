@@ -27,4 +27,12 @@
   .auth-page-sign-in {
     @apply flex justify-center h-screen items-center;
   }
+
+  .home-container {
+    @apply relative flex min-h-screen w-full flex-col items-center gap-5 sm:gap-10;
+  }
+
+  .document-list-empty{
+    @apply flex w-full max-w-[600px] flex-col items-center justify-center gap-4 rounded-lg bg-yellow-400 px-10 py-8;
+  }
 }

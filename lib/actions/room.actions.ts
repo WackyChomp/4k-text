@@ -4,6 +4,7 @@ import { nanoid } from 'nanoid';
 import { liveblocks } from '../liveblocks';
 import { RoomAccesses } from '@liveblocks/node';
 import { revalidatePath } from 'next/cache';
+import { parseStringify } from '../utils';
 
 
 // function creates a new document/room
@@ -35,6 +36,7 @@ export const createDocument = async ({ userId, email }: CreateDocumentParams) =>
 
     revalidatePath('/');
 
+    return parseStringify(room);
 
   } catch (error) {
     console.log(`Error occurred when attempting to create a room: ${error}`)
