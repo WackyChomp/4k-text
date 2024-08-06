@@ -17,7 +17,7 @@
   }
 
   .header {
-    @apply min-h-[50px] min-w-full flex-nowrap bg-green-700 flex w-full items-center justify-between gap-2 px-4;
+    @apply min-h-[50px] min-w-full flex-nowrap bg-green-700 flex w-full items-center justify-between gap-4 px-4;
   }
 
   .document-title {
