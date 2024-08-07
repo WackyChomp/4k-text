@@ -38,13 +38,29 @@ const Home = async (props: Props) => {
         </div>
       ): (
         <div className='document-list-empty'>
-          <Image
-            src={documentIcon}
-            alt='logo-name-text'
-            width={120}
-            height={40}
-            className='bg-pink-700 hover:bg-pink-500 p-2 rounded-2xl'
-          />
+          <div className="flex gap-4">
+            <Image
+              src={documentIcon}
+              alt='logo-name-text'
+              width={120}
+              height={40}
+              className='bg-pink-700 hover:bg-pink-500 p-2 rounded-2xl'
+            />
+            <Image
+              src={documentIcon}
+              alt='logo-name-text'
+              width={120}
+              height={40}
+              className='bg-red-700 hover:bg-red-500 p-2 rounded-2xl'
+            />
+            <Image
+              src={documentIcon}
+              alt='logo-name-text'
+              width={120}
+              height={40}
+              className='bg-blue-800 hover:bg-blue-500 p-2 rounded-2xl'
+            />
+          </div>
 
           <AddDocumentBtn 
             userId={clerkUser.id}
