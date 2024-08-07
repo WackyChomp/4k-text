@@ -23,15 +23,14 @@ const CollaborativeRoom = () => {
             <div className="flex w-fit items-center justify-center gap-5">
               <p className='document-title'>Sample title that elevates your life</p> 
             </div>
-
             <SignedOut>
               <SignInButton />
             </SignedOut>
             <SignedIn>
               <UserButton />
             </SignedIn>
-            
           </Header>
+
           <Editor />
         </div>
       </ClientSideSuspense>

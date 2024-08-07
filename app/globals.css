@@ -35,4 +35,12 @@
   .document-list-empty{
     @apply flex w-full max-w-[600px] flex-col items-center justify-center gap-4 rounded-lg bg-yellow-400 px-10 py-8;
   }
+
+  .collaborative-room{
+      @apply size-full flex max-h-screen flex-1 flex-col items-center overflow-hidden;
+      /* re-adjust size of CollaborativeRoom component to reduce 
+      excess scrolling.
+      size-full alone makes the screen look normal but has excess scrolling space
+      */
+  }
 }
