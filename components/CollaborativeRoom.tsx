@@ -14,9 +14,14 @@ import {
 
 /* Individual document will be collaborative */
 
-const CollaborativeRoom = () => {
+type CollaborativeRoomProps ={
+  roomId: string,
+  roomMetaData: string,
+}
+
+const CollaborativeRoom = ({ roomId, roomMetaData }: CollaborativeRoomProps) => {
   return (
-    <RoomProvider id='my-room'>
+    <RoomProvider id={roomId}>
       <ClientSideSuspense fallback={<Loader />}>
         <div className="collaborative-room">
           <Header>
