@@ -36,6 +36,22 @@ Here are some frameworks/libraries used in this project:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments 🌟🤗🌟
+
+List of incredible resources that drive inspiration or point you into a direction:
+
+* [Choose an Open Source License](https://choosealicense.com)
+* [Emojipedia 😱](https://emojipedia.org/smileys)
+* [Font Awesome](https://fontawesome.com)
+<br><br>
+* [Next.js](https://nextjs.org/) - React Framework
+* [Shadcn/ui](https://ui.shadcn.com/docs) - Customizable UI components
+* [Tailwind CSS](https://tailwindcss.com/docs/installation) - CSS framework
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/

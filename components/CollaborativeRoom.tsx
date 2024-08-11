@@ -4,6 +4,7 @@ import { ClientSideSuspense, RoomProvider } from '@liveblocks/react/suspense'
 import Loader from './Loader'
 import { Editor } from '@/components/editor/Editor';
 import Header from '@/components/Header';
+import ActiveCollaborators from './ActiveCollaborators';
 
 import {
   SignInButton,
@@ -28,12 +29,18 @@ const CollaborativeRoom = ({ roomId, roomMetaData }: CollaborativeRoomProps) => 
             <div className="flex w-fit items-center justify-center gap-5">
               <p className='document-title'>Sample title that elevates your life</p> 
             </div>
+
+            <div className="flex w-full flex-1 justify-end gap-2 sm:gap-7">
+              <ActiveCollaborators />
+            </div>
+
             <SignedOut>
               <SignInButton />
             </SignedOut>
             <SignedIn>
               <UserButton />
             </SignedIn>
+            
           </Header>
 
           <Editor />
